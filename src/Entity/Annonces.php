@@ -30,7 +30,7 @@ class Annonces
     private $context;
 
     /**
-     * @ORM\OneToMany(targetEntity=Images::class, mappedBy="annonces", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity=Images::class, mappedBy="annonces", orphanRemoval=true, cascade={"persist"})
      */
     private $images;
 
